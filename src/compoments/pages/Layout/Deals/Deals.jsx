@@ -99,8 +99,6 @@ const Deals = () => {
                                     </div>
                                 </div>
 
-
-
                                 <div>
                                     <div className='bg-gray-100 border-r border-b border-l'>
                                         <div className='border-t-2 p-4 border-lime-600'>
