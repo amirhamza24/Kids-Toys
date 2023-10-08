@@ -3,7 +3,7 @@ import "./Banner.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // import Swiper core and required modules
-import { Navigation, Autoplay } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -23,13 +23,8 @@ const Banner = () => {
         <Swiper 
             spaceBetween={50} 
             slidesPerView={1}
-            centeredSlides={true}
-            autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-            }}
             navigation = {true}
-            modules={[Autoplay, Navigation]}
+            modules={[Navigation]}
         >
 
 
