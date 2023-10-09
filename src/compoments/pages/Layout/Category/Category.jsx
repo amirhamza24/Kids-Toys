@@ -46,13 +46,14 @@ const Category = () => {
                 </Tabs>
 
 
-                <div>
+                <div className="grid grid-cols-3 gap-8 my-10">
                     {
-                        categories.map(category => <SingleCategory
-                            key={category._id}
-                            category={category}
+                        categories.map(categoryOne => <SingleCategory
+                            key={categoryOne._id}
+                            categoryOne={categoryOne}
+                            
                         >
-
+                        console.log(categoryOne)
                         </SingleCategory> )
                     }
                 </div>

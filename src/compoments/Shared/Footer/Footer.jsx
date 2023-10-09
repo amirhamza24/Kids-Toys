@@ -23,20 +23,19 @@ const Footer = () => {
                             
                             <div className='flex justify-center md:justify-start space-x-2 text-white pt-3'>
 
-                                <div className='cursor-pointer border w-8 h-8 rounded-full flex justify-center items-center hover:bg-violet-700 hover:border-violet-700'>
-                                    
+                                <div className='cursor-pointer border w-8 h-8 rounded-full flex justify-center items-center hover:bg-lime-600 hover:border-lime-600'>
                                     <FaFacebookF className= ''></FaFacebookF>
                                 </div>
 
-                                <div className='cursor-pointer border w-8 h-8 rounded-full flex justify-center items-center hover:bg-violet-700 hover:border-violet-700'>
+                                <div className='cursor-pointer border w-8 h-8 rounded-full flex justify-center items-center hover:bg-lime-600 hover:border-lime-600'>
                                     <FaTwitter className=''></FaTwitter>
                                 </div>
 
-                                <div className='cursor-pointer border w-8 h-8 rounded-full flex justify-center items-center hover:bg-violet-700 hover:border-violet-700'>
+                                <div className='cursor-pointer border w-8 h-8 rounded-full flex justify-center items-center hover:bg-lime-600 hover:border-lime-600'>
                                     <FaInstagram className=''></FaInstagram>
                                 </div>
 
-                                <div className='cursor-pointer border w-8 h-8 rounded-full flex justify-center items-center hover:bg-violet-700 hover:border-violet-700'>
+                                <div className='cursor-pointer border w-8 h-8 rounded-full flex justify-center items-center hover:bg-lime-600 hover:border-lime-600'>
                                     <FaYoutube className=''></FaYoutube>
                                 </div>
                             </div>
@@ -54,7 +53,7 @@ const Footer = () => {
                         </div>
 
                         <div className="ml-0 lg:ml-16">
-                            <h2 className="text-2xl font-bold">our Support</h2>
+                            <h2 className="text-2xl font-bold">Our Support</h2>
                             <div className="flex flex-col space-y-2 mt-5">
                                 <a className="link link-hover">Net Transaction</a>
                                 <a className="link link-hover">My Account</a>
