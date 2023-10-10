@@ -22,7 +22,7 @@ const SingleCategory = ({ categoryOne }) => {
                             <p className="">Rating: <span className='font-semibold text-orange-600'>{rating}</span></p>
                         </div>
 
-                        <p>Category: {category}</p>
+                        <p className='pb-4'>Category: {category}</p>
 
                         <Link to={`/toyDetails/${_id}`}>
                             <button className='para-font bg-lime-600 hover:bg-slate-900 px-4 py-1 text-white'>See Details</button>

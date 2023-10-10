@@ -24,7 +24,7 @@ const MyToyTable = ({ myToy, handleDelete, index }) => {
                 
                 <td>
                     <Link to={`/UpdateToys/${_id}`}>
-                        <button className="border border-gray-500 w-24 text-center py-1 hover:bg-gray-700 hover:text-white cursor-pointer">
+                        <button className="border border-lime-600 w-24 text-center py-1 hover:bg-lime-600 hover:text-white cursor-pointer">
                             Update
                         </button>
                     </Link>

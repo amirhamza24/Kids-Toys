@@ -51,7 +51,6 @@ const { user } = useContext(AuthContext);
                         setMyToys(remaining);
                     }
                 })
-                
             }
         })
     }

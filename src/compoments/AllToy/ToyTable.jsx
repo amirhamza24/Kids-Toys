@@ -29,7 +29,7 @@ const ToyTable = ({ singleAllToy, index }) => {
 
                 <td>
                     <Link to={`/toyDetails/${_id}`}>
-                        <button className="bg-lime-600 px-4 py-1 rounded text-white">Details</button>
+                        <button className="bg-lime-600 border border-lime-600 hover:bg-white hover:text-black px-4 py-1 rounded text-white">Details</button>
                     </Link>
                 </td>
             </tr>
