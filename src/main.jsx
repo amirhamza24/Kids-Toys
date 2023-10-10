@@ -13,6 +13,7 @@ import AuthProviders from './providers/AuthProviders';
 import ToyDetails from './compoments/ToyDetails/ToyDetails';
 import AllToy from './compoments/AllToy/AllToy';
 import AddToy from './compoments/AddToy/AddToy';
+import MyToy from './compoments/AllToy/MyToy';
 // import { router } from './routes/Routes';
 
 const router = createBrowserRouter([
@@ -41,9 +42,13 @@ const router = createBrowserRouter([
             element: <AddToy></AddToy>
         },
         {
+            path: '/myToy',
+            element: <MyToy></MyToy>
+        },
+        {
             path: '/toyDetails/:id',
             element: <ToyDetails></ToyDetails>,
-            loader: ({ params }) => fetch(`http://localhost:5000/allToy/${params.id}`)
+            loader: ({ params }) => fetch(`http://localhost:5000/allAddToy/${params.id}`)
         }
       ]
     },
