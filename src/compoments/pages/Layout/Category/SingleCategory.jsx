@@ -1,8 +1,9 @@
 // import React from 'react';
+import { Link } from 'react-router-dom';
 import './Category.css';
 
 const SingleCategory = ({ categoryOne }) => {
-    const { name, price, img, category, rating } = categoryOne;
+    const { name, price, img, category, rating, _id } = categoryOne;
 
 
     return (
@@ -23,7 +24,11 @@ const SingleCategory = ({ categoryOne }) => {
 
                         <p>Category: {category}</p>
 
-                        <button className='para-font bg-lime-600 hover:bg-slate-900 px-4 py-1 text-white'>See Details</button>
+                        <Link to={`/toyDetails/${_id}`}>
+                            <button className='para-font bg-lime-600 hover:bg-slate-900 px-4 py-1 text-white'>See Details</button>
+                        </Link>
+
+                        {/* to={`/toyDetails/${_id}`} */}
                     </div>
                 </div>
             </div>

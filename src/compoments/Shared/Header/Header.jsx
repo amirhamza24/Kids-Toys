@@ -64,10 +64,10 @@ const Header = () => {
                         <div className='flex items-center font-semibold text-lg'>
                             <div className='space-x-6'>
                                 <Link to="/">Home</Link>
-                                <Link to="/">Blog</Link>
-                                <Link to="/">All Toys</Link>
-                                <Link to="/">Add Toy</Link>
-                                <Link to="/" className='pr-5'>My Toy</Link>
+                                <Link to="/blog">Blog</Link>
+                                <Link to="/allToy">All Toys</Link>
+                                <Link to="/addToy">Add Toy</Link>
+                                <Link to="/myToy" className='pr-5'>My Toy</Link>
                             </div>
 
                             <div>

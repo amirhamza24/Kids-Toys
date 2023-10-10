@@ -10,6 +10,9 @@ import Home from './compoments/pages/Layout/Hom/Home';
 import Login from './compoments/Login/Login/Login';
 import Register from './compoments/Login/Register/Register';
 import AuthProviders from './providers/AuthProviders';
+import ToyDetails from './compoments/ToyDetails/ToyDetails';
+import AllToy from './compoments/AllToy/AllToy';
+import AddToy from './compoments/AddToy/AddToy';
 // import { router } from './routes/Routes';
 
 const router = createBrowserRouter([
@@ -28,6 +31,19 @@ const router = createBrowserRouter([
         {
             path: "/register",
             element: <Register></Register>
+        },
+        {
+            path: '/allToy',
+            element: <AllToy></AllToy>
+        },
+        {
+            path: '/addToy',
+            element: <AddToy></AddToy>
+        },
+        {
+            path: '/toyDetails/:id',
+            element: <ToyDetails></ToyDetails>,
+            loader: ({ params }) => fetch(`http://localhost:5000/allToy/${params.id}`)
         }
       ]
     },
