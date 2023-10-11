@@ -77,39 +77,6 @@ const Header = () => {
             </div>
 
             <div className='border-b shadow-xl'>
-                {/* <div className='w-10/12 mx-auto py-4'>
-                    <div className='flex justify-between items-center'>
-                        <div>
-                            <Link to="/">
-                                <img src={logo} alt="siteLogo" />
-                            </Link>
-                        </div>
-
-                        <div className='flex items-center font-semibold text-lg'>
-                            <div className='space-x-6'>
-                                <Link to="/">Home</Link>
-                                <Link to="/blog">Blog</Link>
-                                <Link to="/allToy">All Toys</Link>
-                                <Link to="/addToy">Add Toy</Link>
-                                <Link to="/myToy" className='pr-5'>My Toy</Link>
-                            </div>
-
-                            <div>
-                                {
-                                    user ? (
-                                        <>
-                                            <p className='cursor-pointer w-20 text-center h-8 border-2 border-gray-500' onClick={handleLogOut}>Logout</p>
-                                        </>
-                                    ) :
-                                    <Link to="/login">
-                                        Login
-                                    </Link>
-                                }
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
-
                 <div className="w-10/12 mx-auto py-4 title-font">
                     <div className="flex items-center justify-between">
                         <div className="">
