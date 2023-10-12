@@ -23,7 +23,7 @@ const MyToyTable = ({ myToy, handleDelete, index }) => {
                 <td>{quantity}</td>
                 
                 <td>
-                    <Link to={`/UpdateToys/${_id}`}>
+                    <Link to={`/updateToy/${_id}`}>
                         <button className="border border-lime-600 w-24 text-center py-1 hover:bg-lime-600 hover:text-white cursor-pointer">
                             Update
                         </button>

@@ -4,7 +4,6 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
 import Swal from "sweetalert2";
 import MyToyTable from "./MyToyTable";
-import bannerWrap from "../../assets/all/banner-wrap.jpg"
 
 const MyToy = () => {
 
@@ -13,7 +12,7 @@ const { user } = useContext(AuthContext);
     // UseTitle('My Toys');
 
     // user cannot see the toys other users added. create it by users email
-    const url = `http://localhost:5000/allAddToy/${user?.email}`;
+    const url = `http://localhost:5000/allToys/${user?.email}`;
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())
@@ -56,11 +55,9 @@ const { user } = useContext(AuthContext);
     }
 
     return (
-        <div className="mb-10">
-            <img className='relative' src={bannerWrap} alt="" />
-        
-            <div className='absolute bottom-20 left-0 h-full flex justify-center items-center w-full'>
-                <h2 className="text-center text-3xl md:text-5xl text-white font-bold w-full">My Toys</h2>
+        <div className="my-10">
+            <div className='flex justify-center items-center w-full'>
+                <h2 className="text-center text-3xl md:text-5xl text-lime-600 font-bold w-full">My Toys</h2>
             </div>
 
             <div className="overflow-x-auto mt-10">

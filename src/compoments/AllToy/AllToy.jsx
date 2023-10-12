@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import './AllToy.css'
 import ToyTable from './ToyTable';
-import bannerWrap from "../../assets/all/banner-wrap.jpg"
 
 const AllToy = () => {
 
@@ -19,17 +18,16 @@ const AllToy = () => {
 
     // searching 
     const handleSearch = () => {
-        fetch(`https://toy-market-server-flax.vercel.app/allAddToys/${search}`)
+        fetch(`http://localhost:5000/allAddToys/${search}`)
         .then(res => res.json())
         .then(data => setAllToy(data))
     }
 
     return (
         <div className="mb-10">
-            <img className='relative' src={bannerWrap} alt="" />
             
-            <div className='absolute bottom-20 left-0 h-full flex justify-center items-center w-full'>
-                <h2 className="text-center text-3xl md:text-5xl text-white font-bold w-full">All Toys</h2>
+            <div className='flex justify-center items-center w-full'>
+                <h2 className="text-center text-3xl md:text-5xl text-lime-600 font-bold w-full">All Toys</h2>
             </div>
 
             <div className='w-11/12 mx-auto'>
