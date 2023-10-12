@@ -13,7 +13,7 @@ const { user } = useContext(AuthContext);
     // UseTitle('My Toys');
 
     // user cannot see the toys other users added. create it by users email
-    const url = `http://localhost:5000/allAddToy?seller_email=${user?.email}`;
+    const url = `http://localhost:5000/allAddToy/${user?.email}`;
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())
