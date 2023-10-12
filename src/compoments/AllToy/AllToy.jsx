@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import { useEffect, useState } from 'react';
 import './AllToy.css'
 import ToyTable from './ToyTable';
@@ -18,7 +18,7 @@ const AllToy = () => {
 
     // searching 
     const handleSearch = () => {
-        fetch(`http://localhost:5000/allAddToys/${search}`)
+        fetch(`http://localhost:5000/allAddToy/${search}`)
         .then(res => res.json())
         .then(data => setAllToy(data))
     }
