@@ -22,7 +22,6 @@ const UpdateToy = () => {
         const updateToy = { price, _id, quantity, description };
         console.log(updateToy)
 
-
         fetch(`https://localhost:5000/allAddToy/${_id}`, {
             method: 'PUT',
             headers: {

@@ -1,5 +1,5 @@
 // import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Login.css'
 import { FaGithub, FaGoogle } from 'react-icons/fa';
 import { useContext } from 'react';
@@ -10,6 +10,11 @@ import { useState } from 'react';
 const Login = () => {
 
     const { signIn, googleSign } = useContext(AuthContext);
+
+    const navigate = useNavigate();
+    const location = useLocation()
+
+    const from = location.state?.from?.pathname || '/';
 
     const [error, setError] = useState('');
 
@@ -26,6 +31,7 @@ const Login = () => {
         .then(result => {
             const user = result.user;
             console.log(user);
+            navigate(from, { replace: true });
             Swal.fire(
                 "Success!",
                 "Login Successful.",
@@ -42,7 +48,7 @@ const Login = () => {
         googleSign()
         .then(result => {
             console.log(result.user)
-            // navigate(from, { replace: true });
+            navigate(from, { replace: true });
             Swal.fire(
                 "Success!",
                 "Login Successful.",
@@ -58,7 +64,6 @@ const Login = () => {
             );
         })
     }
-       
 
 
     return (
@@ -75,7 +80,7 @@ const Login = () => {
                             <div className="w-11/12 md:w-9/12 mx-auto space-y-4">
 
                                 <div className='text-left'>
-                                    <p className='text-red-500'>{}</p>
+                                    <p className='text-red-500'>{error}</p>
                                 </div>
 
                                 <div className="space-y-2">

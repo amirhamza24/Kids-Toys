@@ -1,5 +1,5 @@
 // import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Register.css'
 import { useContext, useState } from 'react';
 import { AuthContext } from '../../../providers/AuthProviders';
@@ -9,6 +9,11 @@ const Register = () => {
 
     const {createUser} = useContext(AuthContext);
     const [error, setError] = useState('');
+
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || "/";
 
     const handleLogin = event => {
         event.preventDefault();
@@ -30,7 +35,7 @@ const Register = () => {
         createUser(email, password)
         .then(result => {
             console.log(result.user);
-            // navigate(from, { replace: true });
+            navigate(from, { replace: true });
             form.reset();
             Swal.fire(
                 "Success!",

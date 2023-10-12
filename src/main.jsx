@@ -15,6 +15,7 @@ import AllToy from './compoments/AllToy/AllToy';
 import AddToy from './compoments/AddToy/AddToy';
 import MyToy from './compoments/AllToy/MyToy';
 import UpdateToy from './compoments/AllToy/UpdateToy';
+import PrivateRoute from './routes/PrivateRoute';
 // import { router } from './routes/Routes';
 
 const router = createBrowserRouter([
@@ -40,20 +41,20 @@ const router = createBrowserRouter([
         },
         {
             path: '/addToy',
-            element: <AddToy></AddToy>
+            element: <PrivateRoute><AddToy></AddToy></PrivateRoute>
         },
         {
             path: '/toyDetails/:id',
-            element: <ToyDetails></ToyDetails>,
+            element: <PrivateRoute><ToyDetails></ToyDetails></PrivateRoute>,
             loader: ({ params }) => fetch(`http://localhost:5000/allAddToy/${params.id}`)
         },
         {
             path: '/myToy',
-            element: <MyToy></MyToy>
+            element: <PrivateRoute><MyToy></MyToy></PrivateRoute>
         },
         {
             path: "/updateToy/:id",
-            element: <UpdateToy></UpdateToy>,
+            element: <PrivateRoute><UpdateToy></UpdateToy></PrivateRoute>,
             loader: ({ params }) => fetch(`http://localhost:5000/allAddToy/${params.id}`)
         }
       ]

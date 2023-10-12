@@ -55,7 +55,7 @@ const { user } = useContext(AuthContext);
     }
 
     return (
-        <div className="my-10">
+        <div className="my-10 w-11/12 mx-auto">
             <div className='flex justify-center items-center w-full'>
                 <h2 className="text-center text-3xl md:text-5xl text-lime-600 font-bold w-full">My Toys</h2>
             </div>
