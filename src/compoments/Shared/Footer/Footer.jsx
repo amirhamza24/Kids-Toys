@@ -5,14 +5,15 @@ import { FaFacebookF, FaInstagram, FaPhone, FaTwitter, FaYoutube, FaMapMarkerAlt
 import footerLogo from "../../../assets/all/logo-bgremove.png"
 import { MdOutlineArrowForwardIos } from 'react-icons/md';
 import footerTop from '../../../assets/all/footerPosition.jpg'
+import payment from '../../../assets/all/footerPayment.jpg'
 
 const Footer = () => {
     return (
         <div>
             <div>
-            <footer className="bg-[#202020] text-zinc-400 relative">
+            <footer className="bg-[#202020] text-zinc-400">
                 <div className="w-10/12 mx-auto">
-                    <div className='relative'>
+                    <div className='relative mt-[20px]'>
                         <img className='' src={footerTop} alt="" />
 
                         <div className=''>
@@ -159,8 +160,10 @@ const Footer = () => {
                     <hr className='border-1 border-gray-600 mb-8' />
 
                     <div className='pt-3 text-sm text-gray-200 text-center space-y-2 md:space-y-0 py-10'>
-                        <div className=''>
+                        <div className='flex justify-between items-center'>
                             <p>Copyright &copy; 2023, Powered By <span className='font-bold'>Kids Toys</span>, All Rights Reserved</p>
+
+                            <img src={payment} alt="" />
                         </div>
                     </div>
                 </div>

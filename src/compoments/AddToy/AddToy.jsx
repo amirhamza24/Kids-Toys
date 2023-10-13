@@ -60,7 +60,7 @@ const AddToy = () => {
     return (
         <div>
             <div className="my-12 w-10/12 mx-auto">
-                <h2 className="text-3xl font-bold text-center">Add a New Toy</h2>
+                <h2 className="text-center text-3xl md:text-5xl text-lime-600 font-bold w-full">Add a New Toy</h2>
 
                 <div className="mt-8">
                     <form onSubmit={handleAddToy}>
@@ -139,7 +139,7 @@ const AddToy = () => {
                             </div>
 
                             <div className="text-center">
-                                <input className='cursor-pointer mt-8 bg-violet-600 hover:bg-violet-700 py-2 px-10 text-white text-lg font-semibold' type="submit" value="Add Toy" />
+                                <input className='cursor-pointer mt-8 bg-white border border-lime-600 text-black hover:bg-lime-600 hover:text-white py-2 px-10 text-lg font-semibold' type="submit" value="Add Toy" />
                             </div>
                         </div>
                     </form>

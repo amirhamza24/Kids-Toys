@@ -89,7 +89,7 @@ const UpdateToy = () => {
                             </div>
 
                             <div className="text-center">
-                                <input className='cursor-pointer mt-8 bg-violet-600 hover:bg-violet-700 py-2 px-10 text-white text-lg font-semibold' type="submit" value="Update Toy" />
+                                <input className='cursor-pointer mt-8 bg-white hover:bg-lime-600 py-2 px-10 hover:text-white text-black border border-lime-600 text-lg font-semibold' type="submit" value="Update Toy" />
                             </div>
                         </div>
                     </form>

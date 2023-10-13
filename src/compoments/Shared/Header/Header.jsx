@@ -90,9 +90,9 @@ const Header = () => {
                                 Home
                             </NavLink>
 
-                            <NavLink className={({isActive }) => isActive ? 'border-2 py-1 px-2' : 'px-2' } to='/blog'>
+                            {/* <NavLink className={({isActive }) => isActive ? 'border-2 py-1 px-2' : 'px-2' } to='/blog'>
                                 Blog
-                            </NavLink>
+                            </NavLink> */}
 
                             <NavLink className={({isActive }) => isActive ? 'border-2 py-1 px-2' : 'px-2' } to='/allToy'>
                                 All Toys
@@ -143,9 +143,9 @@ const Header = () => {
                                                         <Link onClick={() => handleClick(0)} className={activeButton === 0 ? 'border-2 text-white py-1 px-2' : 'px-2'} to='/'>Home</Link>
                                                     </li>
 
-                                                    <li>
+                                                    {/* <li>
                                                         <Link onClick={() => handleClick(1)} className={activeButton === 1 ? 'border-2 text-white py-1 px-2' : 'px-2'} to='/blog'>Blog</Link>
-                                                    </li>
+                                                    </li> */}
 
                                                     <li>
                                                         <Link onClick={() => handleClick(2)} className={activeButton === 2 ? 'border-2 text-white py-1 px-2' : 'px-2'} to='/allToy'>All Toys</Link>

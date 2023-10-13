@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { useEffect, useState } from 'react';
 import './AllToy.css'
 import ToyTable from './ToyTable';
@@ -26,15 +26,15 @@ const AllToy = () => {
     return (
         <div className="mb-10">
             
-            <div className='flex justify-center items-center w-full'>
+            <div className='flex justify-center items-center w-full py-10'>
                 <h2 className="text-center text-3xl md:text-5xl text-lime-600 font-bold w-full">All Toys</h2>
             </div>
 
             <div className='w-11/12 mx-auto'>
-                <div className="my-10">
-                    <input onChange={(e) => setSearch(e.target.value)} type="text" className="px-4 py-2 focus:outline-none border border-gray-600 rounded" />{" "}
+                <div className="my-10  flex justify-center space-x-1">
+                    <input onChange={(e) => setSearch(e.target.value)} type="text" className="px-4 py-2 focus:outline-none border border-gray-400 rounded w-2/6" />
 
-                    <button className='cursor-pointer bg-violet-600 hover:bg-violet-700 py-2 rounded px-7 text-white text-lg font-semibold' onClick={handleSearch}>Search</button>
+                    <button className='cursor-pointer bg-lime-600 hover:bg-slate-900 py-2 rounded px-7 text-white text-lg font-semibold' onClick={handleSearch}>Search</button>
                 </div>
 
                 <div className="overflow-x-auto">
