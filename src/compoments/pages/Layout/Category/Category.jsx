@@ -10,13 +10,13 @@ const Category = () => {
     const [categories, setCategories] = useState([]);
 
     const handleBtnActive = e => {
-        fetch(`http://localhost:5000/allToy/${e}`)
+        fetch(`https://toys-marketplace-server-5hnkf0x9s-amirhamza24.vercel.app/allToy/${e}`)
         .then(res => res.json())
         .then(data => setCategories(data))
     }
 
     useEffect( () => {
-        fetch('http://localhost:5000/allToy/Sports Car')
+        fetch('https://toys-marketplace-server-5hnkf0x9s-amirhamza24.vercel.app/allToy/Sports Car')
         .then(res => res.json())
         .then(data => setCategories(data))
     }, [])

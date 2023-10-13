@@ -12,7 +12,7 @@ const { user } = useContext(AuthContext);
     // UseTitle('My Toys');
 
     // user cannot see the toys other users added. create it by users email
-    const url = `http://localhost:5000/allToys/${user?.email}`;
+    const url = `https://toys-marketplace-server-5hnkf0x9s-amirhamza24.vercel.app/allToys/${user?.email}`;
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())
@@ -32,7 +32,7 @@ const { user } = useContext(AuthContext);
           }).then((result) => {
 
             if(result.isConfirmed) {
-                fetch(`http://localhost:5000/allAddToy/${id}`, {
+                fetch(`https://toys-marketplace-server-5hnkf0x9s-amirhamza24.vercel.app/allAddToy/${id}`, {
                     method: 'DELETE',
 
                 })

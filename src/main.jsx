@@ -46,7 +46,7 @@ const router = createBrowserRouter([
         {
             path: '/toyDetails/:id',
             element: <PrivateRoute><ToyDetails></ToyDetails></PrivateRoute>,
-            loader: ({ params }) => fetch(`http://localhost:5000/toyDetails/${params.id}`)
+            loader: ({ params }) => fetch(`https://toys-marketplace-server-5hnkf0x9s-amirhamza24.vercel.app/toyDetails/${params.id}`)
         },
         {
             path: '/myToy',
@@ -55,7 +55,7 @@ const router = createBrowserRouter([
         {
             path: "/updateToy/:id",
             element: <PrivateRoute><UpdateToy></UpdateToy></PrivateRoute>,
-            loader: ({ params }) => fetch(`http://localhost:5000/allAddToy/${params.id}`)
+            loader: ({ params }) => fetch(`https://toys-marketplace-server-5hnkf0x9s-amirhamza24.vercel.app/allAddToy/${params.id}`)
         }
       ]
     },

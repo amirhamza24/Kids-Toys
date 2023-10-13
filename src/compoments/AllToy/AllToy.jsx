@@ -11,14 +11,14 @@ const AllToy = () => {
 
     // find all toys by tabular form
     useEffect(() => {
-        fetch("http://localhost:5000/allToy")
+        fetch("https://toys-marketplace-server-5hnkf0x9s-amirhamza24.vercel.app/allToy")
             .then((res) => res.json())
             .then((data) => setAllToy(data));
     }, []);
 
     // searching 
     const handleSearch = () => {
-        fetch(`http://localhost:5000/allAddToy/${search}`)
+        fetch(`https://toys-marketplace-server-5hnkf0x9s-amirhamza24.vercel.app/allAddToy/${search}`)
         .then(res => res.json())
         .then(data => setAllToy(data))
     }
